@@ -1,0 +1,15 @@
+server:
+  port: 8088
+#yml配置
+spring:
+  mvc:
+    #  视图解析器
+    view:
+      prefix: /imf/
+      suffix: .html
+    #  静态资源访问前缀（区分动态资源和静态资源）
+    static-path-pattern: /imf/**
+  #  静态资源的加载路径
+  resources:
+    static-locations: classpath:/templates/
+
